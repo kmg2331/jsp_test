@@ -13,4 +13,7 @@
          </dataSource>
 		</environment>
 </environments>
+	<mappers>
+		<mapper resource="com/mybatis/mapper/infomapper.xml"/>
+	</mappers>
 </configuration>
