@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%-- <%@ page import="java.util.Map" %>
+ <%@ page import="util.TestUtils" %>
+ <%@ page import="article.ArticleVO" %>
+ <%@ page import="java.lang.reflect.Field" %>
+ <%@ page import="java.io.PrintWriter" %> --%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<% 
+		/* ArticleVO article = (ArticleVO)request.getAttribute("articleVO");
+		PrintWriter script = response.getWriter();
+		TestUtils util = new TestUtils();
+		Map<String, Object> map = util.toMap(article);
+		
+		script.println("<ul>");
+		 for(Map.Entry<String, Object> elem : map.entrySet()){
+			script.println("<li>");
+			script.println("키 : " + elem.getKey() + " ------> 값 : " + elem.getValue());
+			script.println("</li>");
+         }
+		script.println("</ul>");
+		script.close(); */
+		
+	%>
+	<ul>
+		<li>${articles[0]}</li>
+		<li>${articles[1]}</li>
+	</ul>
+	<!-- 
+		해야할 것 : aritcle목록으로 가져오기
+		view에 출력 후 해당 article 내용이 보이도록 하기
+		쿠키 설정하기
+		
+	 -->
+</body>
+</html>

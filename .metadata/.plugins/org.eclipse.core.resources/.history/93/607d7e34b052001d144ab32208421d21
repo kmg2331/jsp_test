@@ -1,0 +1,18 @@
+package com.mybatis.articleDAO;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.mybatis.config.MyBatisConfig;
+
+import article.ArticleVO;
+
+public class articleDAO {
+	
+	public List<Object> insertArticle(ArticleVO vo){
+		
+		SqlSession session = MyBatisConfig.getsqlSessionFactory().openSession();
+		
+	}
+}

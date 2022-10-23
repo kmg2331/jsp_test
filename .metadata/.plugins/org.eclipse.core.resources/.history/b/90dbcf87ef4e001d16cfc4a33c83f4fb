@@ -1,0 +1,7 @@
+package util;
+
+public class Reflaction {
+	public Map<String, Object> toMap(Object obj) {
+		
+	}
+}

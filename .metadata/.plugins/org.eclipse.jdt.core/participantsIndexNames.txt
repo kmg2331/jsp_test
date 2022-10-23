@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\JAVA_07\jsp_test\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\648987399.index
+\test\src
+C:\JAVA_07\jsp_test\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3129876376.index
+\test\src
+C:\JAVA_07\jsp_test\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1137721137.index
+\jsp03\src

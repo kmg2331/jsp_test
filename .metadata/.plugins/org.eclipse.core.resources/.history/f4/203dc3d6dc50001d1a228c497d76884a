@@ -1,0 +1,6 @@
+package com.test.article;
+
+public interface ArticlePredicate {
+	
+	boolean
+}
