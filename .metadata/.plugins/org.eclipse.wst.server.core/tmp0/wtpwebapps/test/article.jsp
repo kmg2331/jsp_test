@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
  <%@ page import="java.util.ArrayList" %>
- <%@ page import="article.ArticleVO" %>
+ <%@ page import="com.mybatis.app.article.vo.ArticleVO" %>
  <%@ page import="java.io.PrintWriter" %>
 <!DOCTYPE html>
 <html>
@@ -33,6 +33,12 @@
 		out.println("</ul>");
 		out.close(); */
 	%>
+	<h2>게시글 작성 페이지</h2>
+	<form action="article/write" method="post">
+		<input type="text" name="title" placeholder="title"><br>
+		<input type="text" name="title" placeholder="context"><br>
+		<input type="submit" value="글 입력">
+	</form>
 	 <ul>
 		<c:forEach var="arr" items="${articles}">
 			<li>${ arr }</li>

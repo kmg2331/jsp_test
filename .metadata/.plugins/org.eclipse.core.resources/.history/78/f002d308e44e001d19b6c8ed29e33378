@@ -1,8 +1,0 @@
-package utl;
-
-import javax.servlet.annotation.WebServlet;
-
-@WebServlet("/article")
-public class ServletTest {
-
-}

@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="getArticles" method="post">
+	<form action="article.jsp" method="post">
 		<input type="submit" value="버튼">
 	</form>
 </body>

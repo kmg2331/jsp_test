@@ -38,6 +38,8 @@ public class LoginServlet extends HttpServlet {
 		String userPW = request.getParameter("userPW");
 		PrintWriter script = response.getWriter();
 		
+		System.out.println(userID + "/" + userPW);
+		
 		if(userID == null || userPW == null){
 			script.println("<script>");
 			script.println("alert('입력이 안 된 사항이 있습니다.');");
@@ -49,6 +51,7 @@ public class LoginServlet extends HttpServlet {
 		
 		UserDAO userDAO = new UserDAO();
 		UserVO userVO = userDAO.login(userID, userPW);
+		System.out.println(userVO);
 		
 		if(userVO == null){
 			script.println("<script>");

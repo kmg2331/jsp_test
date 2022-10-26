@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\JAVA_07\jsp_test\workspace\test\WebContent\WEB-INF\lib"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="D:\JAVA07\jsp_test\workspace\test\WebContent\WEB-INF\lib"/>
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-15"/>
 	<section name="JavaElementSearchActions">
@@ -74,7 +74,7 @@
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item key="index" value="9"/>
+		<item key="index" value="7"/>
 	</section>
 	<section name="SourceActionDialog.constructors">
 		<item key="VisibilityModifier" value="1"/>

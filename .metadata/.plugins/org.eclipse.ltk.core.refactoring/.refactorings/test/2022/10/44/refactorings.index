@@ -1,1 +1,11 @@
 1666515760494	Rename compilation unit 'articleDAO.java'
+1666711686780	Rename package 'com.mybatis.articleDAO'
+1666711707988	Rename package 'com.mybatis.app.article'
+1666711814042	Rename package 'article'
+1666711943728	Rename resource 'infomapper.xml'
+1666711962100	Rename resource 'articlemapper.xml'
+1666713145451	Rename type 'ArticleInsertController'
+1666713271680	Rename compilation unit 'ArticleIWriteController.java'
+1666715147951	Delete element
+1666715149977	Delete element
+1666715215275	Delete element
