@@ -2,18 +2,27 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-<environments default="mySql">
-<environment id="mySql">
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	
+	<typeAliases>
+		<typeAlias type="com.test.app.member.vo.MemberVO" alias="MemberVO"/>
+	</typeAliases>
+	
+	<environments default="mysql">
+		<environment id="mysql">
 			<transactionManager type="JDBC"/>
 			<dataSource type="POOLED">
-	            <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-	            <property name="url" value="jdbc:mysql://localhost:3306/jsp"/>
-	            <property name="username" value="root"/>
-            	<property name="password" value="1234"/>
-         </dataSource>
+				<property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+				<property name="url" value="jdbc:mysql://localhost:3306/test"/>
+				<property name="username" value="root"/>
+				<property name="password" value="1234"/>
+			</dataSource>
 		</environment>
-</environments>
+	</environments>
+	
 	<mappers>
-		<mapper resource="com/mybatis/mapper/infomapper.xml"/>
+		<mapper resource="com/mybatis/mapper/MemberMapper.xml"/>
 	</mappers>
 </configuration>

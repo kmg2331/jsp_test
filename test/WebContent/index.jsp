@@ -7,15 +7,15 @@
 <title>Main Page</title>
 </head>
 <body>
-	<form action="userJoinAction.jsp" method="post">
-		<input type="text" name="userID" placeholder="id">
-		<input type="text" name="userPW" placeholder="pw">
+	<form action="join.me" method="post">
+		<input type="text" name="memberId" placeholder="id">
+		<input type="text" name="memberPw" placeholder="pw">
 		<input type="submit" value="회원가입">
 	</form>
 	<br>
-	<form action="Login" method="post">
-		<input type="text" name="userID" placeholder="id">
-		<input type="text" name="userPW" placeholder="pw">
+	<form action="login.me" method="post">
+		<input type="text" name="memberId" placeholder="id">
+		<input type="text" name="memberPw" placeholder="pw">
 		<input type="submit" value="로그인">
 	</form>
 </body>

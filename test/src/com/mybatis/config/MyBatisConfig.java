@@ -9,20 +9,20 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class MyBatisConfig {
 	
-	private static SqlSessionFactory sqlsessionFactory;
+	private static SqlSessionFactory sqlSessionFactory;
 	
 	static {
 		try {
 			String resource = "./com/mybatis/config/config.xml";
 			Reader reader = Resources.getResourceAsReader(resource);
-			sqlsessionFactory = new SqlSessionFactoryBuilder().build(reader);
+			sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			System.out.println("초기화 문제 발생, MyBatisConfig.java");
 			e.printStackTrace();
 		}
 	}
-	
-	public static SqlSessionFactory getsqlSessionFactory() {
-		return sqlsessionFactory;
+
+	public static SqlSessionFactory getSqlSessionFactory() {
+		return sqlSessionFactory;
 	}
 }

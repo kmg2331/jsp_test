@@ -11,11 +11,19 @@
   </welcome-file-list>
   
   <servlet>
-  	<servlet-name>article</servlet-name>
+  	<servlet-name>Article</servlet-name>
   	<servlet-class>com.mybatis.app.article.ArticleFrontController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Member</servlet-name>
+  	<servlet-class>com.test.app.member.MemberFrontController</servlet-class>
+  </servlet>
   <servlet-mapping>
-  	<servlet-name>article</servlet-name>
+  	<servlet-name>Article</servlet-name>
 	<url-pattern>*.article</url-pattern>  
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Member</servlet-name>
+  	<url-pattern>*.me</url-pattern>
   </servlet-mapping>
 </web-app>
