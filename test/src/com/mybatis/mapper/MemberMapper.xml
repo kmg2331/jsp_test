@@ -8,8 +8,11 @@
 	<select id="checkId" parameterType="string" resultType="_int">
 		select count(user_number) from tbl_user where user_id = #{memberId}
 	</select>
-	<select id="login" parameterType="MemberVO" resultType="boolean">
-		select exists(select user_number from tbl_user 
-		where user_id = #{memberId} and user_pw = #{memberPw})
+	<select id="lastJoinMemberNumber" resultType="_int">
+		select user_number from tbl_user where user_number = last_insert_id()
+	</select>
+	<select id="login" parameterType="MemberVO" resultType="_int">
+		select ifnull(max(user_number), 0) user_number from tbl_user
+		where user_id = #{memberId} and user_pw = #{memberPw}
 	</select>
 </mapper>

@@ -13,19 +13,22 @@ public class MemberDAO {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true); 
 	}
 	
-	public void join(MemberVO vo) {
+	public boolean join(MemberVO vo) {
 		if(checkId(vo.getMemberId())) {
 			sqlSession.insert("member.join", vo);
-			return;
-		}
-		System.out.println("중복된 아이디. join() 실패.");
+			return true;
+		} else return false;
+	}
+	
+	public int lastJoinMemberNumber() {
+		return sqlSession.selectOne("member.lastJoinMemberNumber");
 	}
 	
 	public boolean checkId(String id) {
 			return (Integer)sqlSession.selectOne("member.checkId", id) == 0;
 	}
 	
-	public boolean login(MemberVO vo) {
+	public int login(MemberVO vo) {
 		return sqlSession.selectOne("member.login", vo);
 	}
 }

@@ -8,6 +8,8 @@
 	
 	<typeAliases>
 		<typeAlias type="com.test.app.member.vo.MemberVO" alias="MemberVO"/>
+		<typeAlias type="com.test.app.article.vo.ArticleVO" alias="ArticleVO"/>
+		<typeAlias type="com.test.app.article.vo.ArticleDTO" alias="ArticleDTO"/>
 	</typeAliases>
 	
 	<environments default="mysql">
@@ -24,5 +26,6 @@
 	
 	<mappers>
 		<mapper resource="com/mybatis/mapper/MemberMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/ArticleMapper.xml"/>
 	</mappers>
 </configuration>

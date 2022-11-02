@@ -5,6 +5,7 @@ import java.rmi.ServerException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.test.app.Execute;
 import com.test.app.Result;
@@ -21,13 +22,16 @@ public class MemberLoginController implements Execute{
 		Result result = new Result();
 		
 		MemberDAO dao = new MemberDAO();
-		if(dao.login(vo)) {
-			System.out.println("로그인 성공!");
-			result.setPath("mypage.me");
-		} else {
+		int memberNumber = dao.login(vo);
+		if(memberNumber == 0) {
 			System.out.println("로그인 실패!");
 			result.setPath("index.jsp");
 			result.setRedirect(true);
+		} else {
+			req.setAttribute("memberNumber", memberNumber);
+			System.out.println("로그인 성공!");
+			result.setRedirect(true);
+			result.setPath("/member/mypage.me");
 		}
 		return result;
 	}

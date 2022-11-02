@@ -12,7 +12,7 @@
   
   <servlet>
   	<servlet-name>Article</servlet-name>
-  	<servlet-class>com.mybatis.app.article.ArticleFrontController</servlet-class>
+  	<servlet-class>com.test.app.article.ArticleFrontController</servlet-class>
   </servlet>
   <servlet>
   	<servlet-name>Member</servlet-name>
@@ -20,7 +20,7 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>Article</servlet-name>
-	<url-pattern>*.article</url-pattern>  
+	<url-pattern>*.at</url-pattern>  
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>Member</servlet-name>

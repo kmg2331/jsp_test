@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="article">
+	<select id="selectAll" resultType="ArticleVO">
+		select * from tbl_article
+	</select>
+	<select id="selectByMemberNumber" parameterType="_int" resultType="ArticleDTO">
+		select a.outdate, a.category, a.title, a.content, a.written_time, a.viewcount, a.likecount, u.user_id
+		from tbl_article a inner join tbl_user u 
+		on a.user_number = #{memberNumber} and a.user_number = u.user_number;
+	</select>
+	<insert id="write" parameterType="ArticleVO">
+		insert into tbl_article (title, content, user_number) 
+		values(#{title}, #{content}, #{memberNumber})
+	</insert>
+</mapper>

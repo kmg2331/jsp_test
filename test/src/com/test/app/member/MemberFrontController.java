@@ -6,6 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.test.app.Result;
 import com.test.app.member.MemberJoinController;
@@ -26,18 +27,33 @@ public class MemberFrontController extends HttpServlet{
 		String target = req.getRequestURI().substring(req.getContextPath().length());
 		Result result = null;
 		
-		if(target.equals("/mypage.me")) {
+		if(target.equals("/member/mypage.me")) {
 			result = new Result();
-			result.setPath("/mypage.jsp");
+			result.setPath("/app/member/mypage.jsp");
 		}
-		else if(target.equals("/join.me")) {
-			System.out.println("target == /join.me");
+		else if(target.equals("/member/join.me")) {
+			result = new Result();
+			result.setPath("/app/member/join.jsp");
+		}
+		else if(target.equals("/member/joinOk.me")) {
 			result = new MemberJoinController().execute(req, resp);
-			System.out.println(result.isRedirect());
+			HttpSession session = req.getSession(true);
+			session.setAttribute("memberNumber", req.getAttribute("memberNumber"));
 		}
-		else if (target.equals("/login.me")) {
-			System.out.println("target == /join.me");
+		else if (target.equals("/member/login.me")) {
 			result = new MemberLoginController().execute(req, resp);
+			HttpSession session = req.getSession(true);
+			session.setAttribute("memberNumber", req.getAttribute("memberNumber"));
+		}
+		else if (target.equals("/member/myarticle.me")) {
+			System.out.println("게시글 목록 접속 중");
+			result = new Result();
+			result.setPath("/article/getList.at");
+		}
+		else if (target.equals("/member/myarticle_load.me")) {
+			System.out.println("게시글 목록 불러오기 완료");
+			result = new Result();
+			result.setPath("/app/member/myarticle.jsp");
 		}
 		
 		if(result != null) {

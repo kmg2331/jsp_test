@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="webAppTest.JDBCConnection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
@@ -16,7 +15,6 @@
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="org.apache.commons.lang3.builder.ToStringBuilder"/>
     <fullyQualifiedTypeName name="org.apache.commons.lang3.builder.ToStringStyle"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="util.Reflection"/>
     <fullyQualifiedTypeName name="util.TestUtils"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
@@ -28,24 +26,38 @@
     <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
     <fullyQualifiedTypeName name="article.ArticleDAO"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.mybatis.app.Execute"/>
-    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
-    <fullyQualifiedTypeName name="com.mybatis.config.MyBatisConfig"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.mybatis.app.article.dao.ArticleDAO"/>
     <fullyQualifiedTypeName name="com.mybatis.app.article.ArticleWriteController"/>
     <fullyQualifiedTypeName name="com.mybatis.app.Result"/>
     <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.rmi.ServerException"/>
+    <fullyQualifiedTypeName name="com.mybatis.config.MyBatisConfig"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Enumeration"/>
+    <fullyQualifiedTypeName name="com.test.app.member.MemberJoinController"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+    <fullyQualifiedTypeName name="com.test.app.member.dao.MemberDAO"/>
+    <fullyQualifiedTypeName name="com.test.app.member.MemberLoginController"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="com.test.app.article.ArticleWriteController"/>
+    <fullyQualifiedTypeName name="com.test.app.member.MyArticleController"/>
     <fullyQualifiedTypeName name="com.test.app.Execute"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.security.transforms.implementations.TransformC14NExclusiveWithComments"/>
+    <fullyQualifiedTypeName name="com.test.app.article.dao.ArticleDAO"/>
+    <fullyQualifiedTypeName name="com.test.app.article.vo.ArticleVO"/>
+    <fullyQualifiedTypeName name="com.test.app.article.ArticleGetListController"/>
+    <fullyQualifiedTypeName name="com.test.app.article.vo.ArticleDTO"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sun.jdi.Location"/>
+    <fullyQualifiedTypeName name="com.test.app.Result"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>
